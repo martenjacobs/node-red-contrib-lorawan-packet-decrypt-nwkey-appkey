@@ -1,0 +1,43 @@
+<script type="text/javascript">
+    RED.nodes.registerType('lorawan-packet-decrypt-nwkey-appkey',{
+        category: 'function',
+        color: '#E9967A',
+        inputs:1,
+        outputs:1,
+        icon: "font-awesome/fa-key",
+        label: function() {
+            return this.name||"lorawan-packet-decrypt-nwkey-appkey";
+        },
+        inputLabels: 'full payload',
+        outputLabels: 'decrypted payload',
+        paletteLabel: "LoraWan Packet Decrypter",
+        defaults: {
+            name: {value:""},
+            nsw: {value:"", required: true},
+            asw: {value:"", required: true}
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="lorawan-packet-decrypt-nwkey-appkey">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-nsw"><i class="icon-key"></i> Network Secret Key</label>
+        <input type="text" id="node-input-nsw" placeholder="Network Secret Key">
+    </div>
+    <div class="form-row">
+        <label for="node-input-asw"><i class="icon-key"></i> Application Secret Key</label>
+        <input type="text" id="node-input-asw" placeholder="Application Secret Key">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="LoraWan Packet Decrypter">
+    <p>This node need the network key and the app key to decrypt a LoraWan message.<br>
+      Input is the payload with the data as ASCII in msg.payload like 'QIoaASYAYAABTqf1tMolR+Q='' <br>
+      return will be the decryted message in HEX like '001e091e'
+     <a href='https://github.com/markusvankempen'>  more infos here</a>
+    </p>
+</script>
