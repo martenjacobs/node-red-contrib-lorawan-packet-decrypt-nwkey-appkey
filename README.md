@@ -1,8 +1,6 @@
 # LoRaWAN Packet Decrypter using Network & App keys
 
-This node need the network key and the app key to decrypt a LoraWan message.
-Input is the payload with the data as ASCII in msg.payload like 'QIoaASYAYAABTqf1tMolR+Q=''
-return will be the decryt the message in HEX like '001e091e' in msg.payload.out
+This node needs the network key and the app key to decrypt a LoraWan message/payload. Input is the payload with the data as ASCII in msg.payload like 'QIoaASYAYAABTqf1tMolR+Q='' return will be the decrypt the message in HEX like '001e091e' in msg.payload.out 
  <a href='https://github.com/markusvankempen'>  more infos here</a>
 
 ## Installation
