@@ -1,4 +1,4 @@
-#lorawan-packet-decrypt-nwkey-appkey
+# LoRaWAN Packet Decrypter using Network & App keys
 
 This node need the network key and the app key to decrypt a LoraWan message.
 Input is the payload with the data as ASCII in msg.payload like 'QIoaASYAYAABTqf1tMolR+Q=''
