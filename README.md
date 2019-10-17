@@ -18,7 +18,7 @@ npm -g install lorawan-packet-decrypt-nwkey-appkey
 ## Features
 - decrypts msg.payload  into msg.payload.out (msg.payload.in )
 
-![Screenshot](images/Screenshot 2019-10-17 13.28.30.png)
+![Screenshot](images/Screenshot.png)
 
 ### Reference
 https://github.com/scne/node-red-contrib-lora-packet-converter
