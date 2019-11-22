@@ -4,7 +4,7 @@ This node needs the network key and the app key to decrypt a LoraWan message/pay
  <a href='https://github.com/markusvankempen'>  more infos here</a>
 
 ## Installation
-npm -g install lorawan-packet-decrypt-nwkey-appkey
+npm -g install https://github.com/markusvankempen/node-red-contrib-lorawan-packet-decrypt-nwkey-appkey
 
 ### Example Node-RED flow
 
