@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "lora-packet": "^0.6.0"
+    "lora-packet": "0.8.6"
   },
   "keywords": [
     "node-red", "lora", "ttn", "lorawan", "decrypt", "feather", "RAK", "PYCOM", "Decrypter"
