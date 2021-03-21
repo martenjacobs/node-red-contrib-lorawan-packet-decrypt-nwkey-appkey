@@ -29,5 +29,5 @@ https://www.npmjs.com/package/lora-packet
 mvk@ca.ibm.com / markus@vankempen.org 
 
 ### Version 
-Initial 2019-Oct-17
-Update: 2021-Mar-21
+- Initial 2019-Oct-17
+- Update: 2021-Mar-21
