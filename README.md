@@ -22,8 +22,8 @@ npm -g install node-red-contrib-lorawan-packet-decrypt-nwkey-appkey
 ![Screenshot](images/Screenshot.png)
 
 ### Reference
-https://github.com/scne/node-red-contrib-lora-packet-converter
-https://www.npmjs.com/package/lora-packet
+- https://github.com/scne/node-red-contrib-lora-packet-converter
+- https://www.npmjs.com/package/lora-packet
 
 ### Author
 mvk@ca.ibm.com / markus@vankempen.org 
