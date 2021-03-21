@@ -17,6 +17,7 @@ npm -g install node-red-contrib-lorawan-packet-decrypt-nwkey-appkey
 
 ## Features
 - decrypts msg.payload  into msg.payload.out (msg.payload.in )
+- msg.payload.buffers has all information about packet, especially DevAddr.
 
 ![Screenshot](images/Screenshot.png)
 
