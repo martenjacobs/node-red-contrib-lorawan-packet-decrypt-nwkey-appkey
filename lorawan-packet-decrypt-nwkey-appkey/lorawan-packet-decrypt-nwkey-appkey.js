@@ -18,9 +18,9 @@ module.exports = function(RED) {
                     var packet = lora_packet.fromWire(new Buffer(msg.payload, 'base64'));
                     msg.payload={}
                     msg.payload.in = indata   
-                    var NwkSKey = new Buffer(config.nsw, 'hex');
+                    var NwkSKey = new Buffer(msg.nsw || config.nsw, 'hex');
                     if(lora_packet.verifyMIC(packet, NwkSKey)){
-                        var AppSKey = new Buffer(config.asw, 'hex');
+                        var AppSKey = new Buffer(msg.asw || config.asw, 'hex');
                         msg.payload.out = lora_packet.decrypt(packet, AppSKey, NwkSKey).toString('hex');
                         msg.payload.buffers = packet.getBuffers();
                         node.status({});
